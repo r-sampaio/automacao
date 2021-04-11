@@ -36,7 +36,7 @@ while True:
             for filename in os.listdir(path):
                 try:
                     # Search file in folder
-                    file_list = drive.ListFile({'q':  f"title contains '{filename}' and '{id_folder}' in parents and trashed=false"}).GetList()
+                    file_list = drive.ListFile({'q': f"title contains '{filename}' and '{id_folder}' in parents and trashed=false"}).GetList()
                     text_erro = (f"{file_list[0]['title']} \033[31mArquivo existe\033[m")
                     print(text_erro)
                     text_status_erro += (f'Pasta {folder}: {text_erro}')
