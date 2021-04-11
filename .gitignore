@@ -1,0 +1,7 @@
+
+mycreds.txt
+client_secrets.json
+__pycache__/
+email_from.txt
+email_to.txt
+folder.py
